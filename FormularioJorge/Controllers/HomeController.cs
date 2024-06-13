@@ -1,11 +1,14 @@
 using FormularioJorge.Models;
+using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using System.Data;
 using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 
 namespace FormularioJorge.Controllers
 {
-    
+
     public class HomeController : Controller
     {
         private static List<Entrevistado> _Entrevistados = new List<Entrevistado>();
@@ -17,7 +20,46 @@ namespace FormularioJorge.Controllers
         }
 
         public IActionResult Index()
-        { 
+        {
+            // Configurar los parámetros de conexión
+            string server = "DESKTOP-75AO1D4\\SQLEXPRESS01";
+            string database = "PlataformaJorge";
+            string userId = "sa";
+            string password = "desa";
+            // Crear una instancia de DatabaseManager y usarla para conectarse y realizar consultas
+            using (ConeccionBD dbManager = new(server, database, userId, password))
+            {
+                try
+                {
+                    dbManager.OpenConnection();
+                    // Llamar a un procedimiento almacenado
+                    string procedureName = "spPruebaConexion";
+                    SqlParameter[] parameters = new SqlParameter[]
+                    {
+                        new SqlParameter("@Parametro1", SqlDbType.Int) { Value = 123 },
+                        new SqlParameter("@Parametro2", SqlDbType.VarChar, 20) { Value = "Prueba" },
+                        new SqlParameter("@Parametro3", SqlDbType.Money) { Value = 1.20 }
+                    };
+                    using (var reader = dbManager.ExecuteStoredProcedure(procedureName, parameters))
+                    {
+                        // Leer los datos obtenidos
+                        while (reader.Read())
+                        {
+                            // Acceder a los datos por índice o nombre de columna
+                            Console.WriteLine($"{reader[0]}, {reader["Parametro1"]}");
+                            Console.WriteLine($"{reader[1]}, {reader["Parametro2"]}");
+                            Console.WriteLine($"{reader[2]}, {reader["Parametro3"]}");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de errores
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+            }
+
+
             return View(_Entrevistados);
         }
 
@@ -25,9 +67,9 @@ namespace FormularioJorge.Controllers
         {
             return View();
         }
-        public IActionResult GuardarFormulario(string NombreEntr,string RazonSocial, string Puesto,string CorreoElectronico)
+        public IActionResult GuardarFormulario(string NombreEntr, string RazonSocial, string Puesto, string CorreoElectronico)
         {
-            
+
             _Entrevistados.Add(new Entrevistado()
             {
                 Nombre = NombreEntr,
