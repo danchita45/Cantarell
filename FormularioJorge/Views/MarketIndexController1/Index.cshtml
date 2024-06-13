@@ -6,18 +6,25 @@
         <td>
             <table width="30%" align="left">
                 <tr>
-                    <td align="center">Precios</td>
+                    <td align="center">
+                        <button onclick="PantallaPrincipal(0)" class="btn btn-primary">Precios</button>
+                    </td>
                 </tr>
                 <tr>
-                    <td align="center">Ordenes</td>
+                    <td align="center">
+                        
+                        <a onclick="PantallaPrincipal(1)" class="btn btn-primary">Ordenes</a>
+                    </td>
                 </tr>
                 <tr>
-                    <td align="center">Tracking</td>
+                    <td align="center">
+                        <a onclick="PantallaPrincipal(2)" class="btn btn-primary">Tracking</a>
+                    </td>
                 </tr>
             </table>
         </td>
         <td>
-            <table id="Precios" width="70%" align="right">
+            <table id="Precios" width="70%" align="right" hidden>
                 <tr>
                     <td>
 
@@ -25,7 +32,7 @@
                             <tr>
                                 <td>Estado</td>
                                 <td>
-                                    <select id="Idubicacion" name="IdUbicacion">
+                                    <select id="Idubicacion" name="IdUbicacion" onclick="Mostrardiferentes(this)">
                                         <option value="0">Seleccione ubicacion</option>
                                         <option value="1">Metepec</option>
                                         <option value="2">Toluca</option>
@@ -57,12 +64,822 @@
                         </table>
                     </td>
                 </tr>
+                <tr id="numero1">
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td colspan="2">
+                                    <img width="200" height="100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Nombre:
+                                    </label>
+                                </td>
+                                <td>Estacion 01</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        RazonSocial:
+                                    </label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Capacidad:
+                                    </label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Diesel:
+                                    </label>
+                                </td>
+                                <td>
+                                    100,00 Lt
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        87 Octanos:
+                                    </label>
+                                </td>
+                                <td>98,000 lT</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        91 Octanos:
+                                    </label>
+                                </td>
+                                <td>98,00 lT</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Ubicacion:
+                                    </label>
+                                </td>
+                                <td>Calle 1, Colonia 1, CDMX,CP:0000</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            91 Octanos
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td align="center"><a href="@Url.Action("OctanosDiesel","MarketIndexController1")" class="btn btn-primary">compra</a></td>
+                                <td align="center"><a href="@Url.Action("OctanosNueve","MarketIndexController1")" class="btn btn-primary">compra</a></td>
+
+                                <td align="center">
+                                    <a href="@Url.Action("Octanosocho","MarketIndexController1")" class="btn btn-primary">compra</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr id="numero2" hidden>
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td colspan="2">
+                                    <img width="200" height="100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Nombre:
+                                    </label>
+                                </td>
+                                <td>Estacion 02</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        RazonSocial:
+                                    </label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Capacidad:
+                                    </label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Diesel:
+                                    </label>
+                                </td>
+                                <td>
+                                    300,00 Lt
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        87 Octanos:
+                                    </label>
+                                </td>
+                                <td>58,000 lT</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        91 Octanos:
+                                    </label>
+                                </td>
+                                <td>34,00 lT</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Ubicacion:
+                                    </label>
+                                </td>
+                                <td>Calle 2, Colonia 2, CDMX,CP:0000</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"><a href="@Url.Action("OctanosDiesel","MarketIndexController1")" class="btn btn-primary">compra</a></td>
+                                <td align="center"><a href="@Url.Action("OctanosNueve","MarketIndexController1")" class="btn btn-primary">compra</a></td>
+                                <td align="center"><a href="@Url.Action("Octanosocho","MarketIndexController1")" class="btn btn-primary">compra</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr id="numero3">
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td colspan="2">
+                                    <img width="200" height="100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Nombre:
+                                    </label>
+                                </td>
+                                <td>Estacion 01</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        RazonSocial:
+                                    </label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Capacidad:
+                                    </label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Diesel:
+                                    </label>
+                                </td>
+                                <td>
+                                    350,00 Lt
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        87 Octanos:
+                                    </label>
+                                </td>
+                                <td>78,000 lT</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        91 Octanos:
+                                    </label>
+                                </td>
+                                <td>50,00 lT</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Ubicacion:
+                                    </label>
+                                </td>
+                                <td>Calle 1, Colonia 1, CDMX,CP:0000</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"><a href="@Url.Action("OctanosDiesel","MarketIndexController1")" class="btn btn-primary">compra</a></td>
+                                <td align="center"><a href="@Url.Action("OctanosNueve","MarketIndexController1")" class="btn btn-primary">compra</a></td>
+                                <td align="center"><a href="@Url.Action("Octanosocho","MarketIndexController1")" class="btn btn-primary">compra</button></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr id="numero3">
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td colspan="2">
+                                    <img width="200" height="100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Nombre:
+                                    </label>
+                                </td>
+                                <td>Estacion 01</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        RazonSocial:
+                                    </label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Capacidad:
+                                    </label>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Diesel:
+                                    </label>
+                                </td>
+                                <td>
+                                    350,00 Lt
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        87 Octanos:
+                                    </label>
+                                </td>
+                                <td>78,000 lT</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        91 Octanos:
+                                    </label>
+                                </td>
+                                <td>50,00 lT</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Ubicacion:
+                                    </label>
+                                </td>
+                                <td>Calle 1, Colonia 1, CDMX,CP:0000</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table border="1">
+                                        <tr>
+                                            <td>
+                                                <table border="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <label>
+                                                                $22.13
+                                                            </label>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Diesel
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Venta:</label></td>
+                                            <td>CIF</td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Disponibilidad:</label></td>
+                                            <td>2-3 días</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"><a href="@Url.Action("OctanosDiesel","MarketIndexController1")" class="btn btn-primary">compra</a></td>
+                                <td align="center"><a href="@Url.Action("OctanosNueve","MarketIndexController1")" class="btn btn-primary">compra</a></td>
+                                <td align="center"><a href="@Url.Action("Octanosocho","MarketIndexController1")" class="btn btn-primary" class="btn btn-primary">compra</button></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+            <table id="Ordenes" width="100%" align="center" hidden>
                 <tr>
-                    <table width="100%" align="center"> 
-                        <></>
-                    </table>
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td>
+                                    <img width="50px" height="50px">
+                                </td>
+                                <td>
+                                    <input type="text" id="FiltroOrdenesCompra" name="FiltroOrdenescompra">
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+
+                        <table width="100%" align="center" border="1">
+                            <tr>
+                                <td>ID</td>
+                                <td>Fecha</td>
+                                <td>Ubicacion</td>
+                                <td colspan="2">Herramientas</td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>Fecha</td>
+                                <td>Orden de Compra 01</td>
+                                <td colspan="2" class="tools">
+                                    <img src="path/to/image1.jpg" alt="tool1">
+                                    <img src="path/to/image2.jpg" alt="tool2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>Fecha</td>
+                                <td>Orden de Compra 02</td>
+                                <td colspan="2" class="tools">
+                                    <img src="path/to/image1.jpg" alt="tool1">
+                                    <img src="path/to/image2.jpg" alt="tool2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>Fecha</td>
+                                <td>Orden de Compra 03</td>
+                                <td colspan="2" class="tools">
+                                    <img src="path/to/image1.jpg" alt="tool1">
+                                    <img src="path/to/image2.jpg" alt="tool2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>Fecha</td>
+                                <td>Orden de Compra 04</td>
+                                <td colspan="2" class="tools">
+                                    <img src="path/to/image1.jpg" alt="tool1">
+                                    <img src="path/to/image2.jpg" alt="tool2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>Fecha</td>
+                                <td>Orden de Compra 05</td>
+                                <td colspan="2" class="tools">
+                                    <img src="path/to/image1.jpg" alt="tool1">
+                                    <img src="path/to/image2.jpg" alt="tool2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>06</td>
+                                <td>Fecha</td>
+                                <td>Orden de Compra 06</td>
+                                <td colspan="2" class="tools">
+                                    <img src="path/to/image1.jpg" alt="tool1">
+                                    <img src="path/to/image2.jpg" alt="tool2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>07</td>
+                                <td>Fecha</td>
+                                <td>Orden de Compra 07</td>
+                                <td colspan="2" class="tools">
+                                    <img src="path/to/image1.jpg" alt="tool1">
+                                    <img src="path/to/image2.jpg" alt="tool2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>08</td>
+                                <td>Fecha</td>
+                                <td>Orden de Compra 08</td>
+                                <td colspan="2" class="tools">
+                                    <img src="path/to/image1.jpg" alt="tool1">
+                                    <img src="path/to/image2.jpg" alt="tool2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>09</td>
+                                <td>Fecha</td>
+                                <td>Orden de Compra 09</td>
+                                <td colspan="2" class="tools">
+                                    <img src="path/to/image1.jpg" alt="tool1">
+                                    <img src="path/to/image2.jpg" alt="tool2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Fecha</td>
+                                <td>Orden de Compra 10</td>
+                                <td colspan="2" class="tools">
+                                    <img src="path/to/image1.jpg" alt="tool1">
+                                    <img src="path/to/image2.jpg" alt="tool2">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
             </table>
+
         </td>
     </tr>
 </table>
+<script src="~/js/IndexPrecios.js"></script>

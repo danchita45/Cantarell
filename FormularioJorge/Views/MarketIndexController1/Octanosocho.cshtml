@@ -1,0 +1,136 @@
+﻿<table align="center" width="100%">
+    <tr>
+        <td>
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td align="left">
+                        Usted Esta adquiriendo :
+                    </td>
+                    <td align="left">Producto</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="1" cellpadding="65" style="background-color: lightgreen;">
+                            <tr>
+                                <td>
+                                    <label>87 Octanos</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label id="CantidadLitros">
+                                        200000
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <a class="btn btn-link" onclick="actualizarCantidadLitrosMas()">+</a></td>
+                                <td><a class="btn btn-link" onclick="actualizarCantidadLitrosMenos()"> -</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table width="100%">
+                <tr>
+                    <td align="left">
+                        Orden compra
+                    </td>
+                    <td align="left"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="1" width="100%" cellpadding="8">
+                            <tr>
+                                <td>
+                                    <label>Datos Distribuidor</label>
+                                </td>
+                                <td>
+                                    <label>Datos Cliente</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <label>Nombre o Razon Social</label></td>
+                                <td> <label>Nombre o Razon Social</label></td>
+                            </tr>
+                            <tr>
+                                <td>All-Mexico Distributors (AMD)</td>
+                                <td> All-Mexico buyers</td>
+                            </tr>
+                            <tr>
+                                <td> <label>RFC:</label></td>
+                                <td> <label>RFC:</label></td>
+                            </tr>
+                            <tr>
+                                <td>DIMA010101000</td>
+                                <td> DIMA010101000</td>
+                            </tr>
+                            <tr>
+                                <td> <label>Dirección:</label></td>
+                                <td> <label>Dirección:</label></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Calle XXXXX No. 123, Colonia Centro
+                                    C.P. 00000, Ciudad de México, México
+                                </td>
+                                <td>
+                                    Calle XXXXX No. 123, Colonia Centro
+                                    C.P. 00000, Ciudad de México, México
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>Ref.</td>
+                                            <td>Descripcion</td>
+                                            <td>Cantidad (lts)</td>
+                                            <td>Prec.Unitario</td>
+                                            <td>total</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input id="Referencia" name="Referencia" readonly></td>
+                                            <td><input id="Descripcion" name="Descripcion" readonly></td>
+                                            <td><input id="Cantidad" name="Cantidad" readonly></td>
+                                            <td><input id="PrecioUnitario" name="PrecioUnitario" readonly></td>
+                                            <td><input id="Total" name="Total" readonly></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <table border="1">
+                                        <tr>
+                                            <td>PrecioMolecula: </td>
+                                            <td>$___________</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table border="1" align="center">
+                                        <tr>
+                                            <td>
+                                                <button class="btn btn-primary">Continuar</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-primary">Regresar</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<script src="~/js/IndexPrecios.js"></script>

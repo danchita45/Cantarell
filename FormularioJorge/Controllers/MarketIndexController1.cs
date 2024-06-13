@@ -8,5 +8,21 @@ namespace FormularioJorge.Controllers
         {
             return View();
         }
+        public IActionResult Octanosocho()
+        {
+            return View();
+        }
+        public IActionResult OctanosNueve()
+        {
+            return View();
+        }
+        public IActionResult OctanosDiesel()
+        {
+            return View();
+        }
+        public IActionResult OrdenesCompra()
+        {
+            return View();
+        }
     }
 }
