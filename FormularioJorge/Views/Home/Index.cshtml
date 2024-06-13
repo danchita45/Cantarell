@@ -1,0 +1,48 @@
+﻿@model List<Entrevistado>
+<table width="100%" align="center" >
+    <form asp-action="Index" asp-controller="MarketIndexController1">
+    <tr>
+        <td align="center">PantallaRegistro</td>
+    </tr>
+    <tr>
+        <td>Nombre:</td>
+        <td align="center"><input type="text" id="NombreEntr" name="NombreEntr"></td>
+    </tr>  
+    <tr>
+        <td>RazonSocial:</td>
+        <td align="center"><input type="text" id="RazonSocial" name="RazonSocial"></td>
+    </tr>   
+    <tr>
+        <td>Puesto:</td>
+        <td align="center"><input type="text" id="Puesto" name="Puesto"></td>
+    </tr>    
+    <tr>
+        <td>Correo Electronico:</td>
+        <td align="center"><input type="text" id="CorreoElectronico" name="CorreoElectronico"></td>
+    </tr>    
+
+    <tr>
+        <td align="center" colspan="2">
+            <button type="submit" class="btn-primary">Guardar</button>
+        </td>
+    </tr>
+    </form>
+</table>
+
+<table width="100%" align="center">
+    <tr>
+        <td>Nombre</td>
+        <td>RazonSocial</td>
+        <td>Puesto</td>
+        <td>CorreoElectronico</td>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Nombre</td>
+            <td>@item.RazonSocial</td>
+            <td>@item.puesto</td>
+            <td>@item.correo</td>
+        </tr>
+    }
+</table>
