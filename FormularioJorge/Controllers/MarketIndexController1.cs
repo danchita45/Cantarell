@@ -94,6 +94,11 @@ namespace FormularioJorge.Controllers
                 FileDownloadName = "PRB.pdf"
             };
         }
+
+        public IActionResult CheckOut()
+        {
+            return View();
+        }
         
     }
 }

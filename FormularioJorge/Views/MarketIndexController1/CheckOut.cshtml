@@ -1,0 +1,236 @@
+﻿<table width="100%" align="center">
+    <tr>
+        <td align="left">Informacion de Entrega</td>
+    </tr>
+    <tr>
+        <td>
+            <table width="100%" align="center">
+                <tr>
+                    <td colspan="2">
+                        <img width="200" height="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Nombre:
+                        </label>
+                    </td>
+                    <td>Estacion 01</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            RazonSocial:
+                        </label>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Capacidad:
+                        </label>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Diesel:
+                        </label>
+                    </td>
+                    <td>
+                        100,00 Lt
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            87 Octanos:
+                        </label>
+                    </td>
+                    <td>98,000 lT</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            91 Octanos:
+                        </label>
+                    </td>
+                    <td>98,00 lT</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Ubicacion:
+                        </label>
+                    </td>
+                    <td>Calle 1, Colonia 1, CDMX,CP:0000</td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <img width="100px" height="100px"></img>
+        </td>
+    </tr>
+    <tr>
+        <td><hr></td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <table id="caracteristicasProducto">
+                            <tr>
+                                <td rowspan="4">
+                                    $22.13
+                                    Diesel
+                                </td>
+                                <td>
+                                    Terminos de Entrega: CIF
+                                </td>
+                                <td>
+                                    Disponibilidad:
+                                    24 hr post pago
+                                </td>
+                                <td>
+                                    Tiempo de entrega estimada : 5 dias
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table id="caracteristicasProducto">
+                            <tr>
+                                <td>
+                                    Producto:
+                                </td>
+                                <td>
+                                    Diesel
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Proveedor:
+                                </td>
+                                <td>
+                                    RP-0933
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ID:
+                                </td>
+                                <td>
+                                    DA-CIF-0245
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Terminos de entrega:
+                                </td>
+                                <td>
+                                    CIF
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tiempo Estimado de Despacho:
+                                </td>
+                                <td>
+                                    24 hrs
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tiempo Estimado de Entrega:
+                                </td>
+                                <td>
+                                    X dias
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><hr></td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <table id="FormaPago">
+                            <tr>
+                                <td>Formato de pago</td>
+                            </tr>
+                            <tr>
+                                <td>Financiamiento por medio de Cantarell Capital</td>
+                            </tr>
+                            <tr>
+                                <td>Transferencia Bancaria</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table id="Checkout">
+                            <tr>
+                                <td>
+                                    Resumen de Orden:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    XX,XXX litros solicitados
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    $22.13 Precio por litro final
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    $X,XXX,XXX,XXX Subtotal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    $X,XXX,XXX Uso de la plataforma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    $------- Costo de Envio
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    $X,XXX,XXX Total
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><hr></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="checkbox"  id="ACTyt" onclick="HabilidarBotonOC()">
+            Aceptar Terminos y Condiciones
+        </td>
+        <td>
+            <a asp-action="ImprimirOC" asp-controller="MarketIndexController1" class="btn-primary" id="CrearOC" disabled>Crear Orden de Compra</a>
+        </td>
+    </tr>
+</table>
+<script src="~/js/IndexPrecios.js"></script>

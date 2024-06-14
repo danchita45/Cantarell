@@ -57,4 +57,7 @@ function actualizarCantidadLitrosMenos() {
     label.innerHTML = litros;
 
 }
+function HabilidarBotonOC() {
+    document.getElementById('CrearOC').disabled = false;
+}
 
