@@ -33,22 +33,23 @@ namespace FormularioJorge.Controllers
                 {
                     dbManager.OpenConnection();
                     // Llamar a un procedimiento almacenado
-                    string procedureName = "spPruebaConexion";
+                    string procedureName = "spLeerEntrevistados";
                     SqlParameter[] parameters = new SqlParameter[]
                     {
-                        new SqlParameter("@Parametro1", SqlDbType.Int) { Value = 123 },
-                        new SqlParameter("@Parametro2", SqlDbType.VarChar, 20) { Value = "Prueba" },
-                        new SqlParameter("@Parametro3", SqlDbType.Money) { Value = 1.20 }
                     };
                     using (var reader = dbManager.ExecuteStoredProcedure(procedureName, parameters))
                     {
                         // Leer los datos obtenidos
                         while (reader.Read())
                         {
-                            // Acceder a los datos por índice o nombre de columna
-                            Console.WriteLine($"{reader[0]}, {reader["Parametro1"]}");
-                            Console.WriteLine($"{reader[1]}, {reader["Parametro2"]}");
-                            Console.WriteLine($"{reader[2]}, {reader["Parametro3"]}");
+                            _Entrevistados.Add(new Entrevistado()
+                            {
+                                IdEntrevistado = Convert.ToInt32(reader["IdEntrevistado"]),
+                                Nombre = reader["Nombre"].ToString(),
+                                RazonSocial = Convert.ToString(reader["RazonSocial"]),
+                                puesto = Convert.ToString(reader["Puesto"]),
+                                correo = Convert.ToString(reader["Correo"]),
+                            }); ;
                         }
                     }
                 }
