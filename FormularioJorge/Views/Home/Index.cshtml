@@ -1,24 +1,25 @@
 ﻿@model List<Entrevistado>
-<table width="100%" align="center" >
+<body class="regis">
+<table class="tbl-registro" width="100%" align="center">
     <form asp-action="Index" asp-controller="MarketIndexController1">
     <tr>
-        <td align="center">PantallaRegistro</td>
+        <td class="txt-registrer" align="center">Registro - Cantarell Systems</td>
     </tr>
     <tr>
-        <td>Nombre:</td>
-        <td align="center"><input type="text" id="NombreEntr" name="NombreEntr"></td>
+		<!--<td>Nombre:</td>-->
+        <td align="center"><input class="puts" placeholder="Nombre" type="text" id="NombreEntr" name="NombreEntr"></td>
     </tr>  
     <tr>
-        <td>RazonSocial:</td>
-        <td align="center"><input type="text" id="RazonSocial" name="RazonSocial"></td>
+        <!--<td>RazonSocial:</td>-->
+        <td align="center"><input class="puts" placeholder="Razón Social" type="text" id="RazonSocial" name="RazonSocial"></td>
     </tr>   
     <tr>
-        <td>Puesto:</td>
-        <td align="center"><input type="text" id="Puesto" name="Puesto"></td>
+        <!--<td>Puesto:</td>-->
+        <td align="center"><input class="puts" placeholder="Puesto" type="text" id="Puesto" name="Puesto"></td>
     </tr>    
     <tr>
-        <td>Correo Electronico:</td>
-        <td align="center"><input type="text" id="CorreoElectronico" name="CorreoElectronico"></td>
+        <!---<td>Correo Electronico:</td>-->
+        <td align="center"><input class="puts" placeholder="Correo electrónico" type="text" id="CorreoElectronico" name="CorreoElectronico"></td>
     </tr>    
 
     <tr>
@@ -46,3 +47,4 @@
         </tr>
     }
 </table>
+</body>

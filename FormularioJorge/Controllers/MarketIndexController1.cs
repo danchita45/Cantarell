@@ -65,5 +65,9 @@ namespace FormularioJorge.Controllers
         {
             return View();
         }
+        public IActionResult Tracking()
+        {
+            return View();
+        }
     }
 }
