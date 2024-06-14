@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\MarketIndexController1\ImprimirOC.cshtml" />
+    <Content Remove="Views\Shared\ImprimirOC.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,18 +16,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+    <PackageReference Include="Rotativa.AspNetCore" Version="1.3.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Views\MarketIndexController1\ImprimirOC.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\MarketIndexController1\ImprimirOC.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views\MarketIndexController1\ImprimirOC.cshtml" />
+    <None Include="Views\Shared\ImprimirOC.cshtml" />
   </ItemGroup>
 
 </Project>

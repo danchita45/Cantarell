@@ -1,7 +1,12 @@
 ﻿using FormularioJorge.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Rotativa;
 using System.Data;
+using Microsoft.AspNetCore.Mvc;
+using System.IO;
+using System.Threading.Tasks;
+using Rotativa.AspNetCore;
 
 namespace FormularioJorge.Controllers
 {
@@ -77,10 +82,17 @@ namespace FormularioJorge.Controllers
         {
             return View();
         }
-        public IActionResult ImprimirOC()
+        public async Task<IActionResult> ImprimirOC()
         {
+            
+            Entrevistado e = new Entrevistado();
 
-            return View();
+            ViewAsPdf vista = new();
+            byte[] datos = await vista.BuildFile(ControllerContext);
+            return new FileContentResult(datos, "application/pdf")
+            {
+                FileDownloadName = "PRB.pdf"
+            };
         }
         
     }
