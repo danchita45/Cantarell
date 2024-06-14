@@ -9,7 +9,7 @@ namespace FormularioJorge.Controllers
     {
         public IActionResult Index(string NombreEntr, string RazonSocial, string Puesto, string CorreoElectronico)
         {
-
+            List<Entrevistado> _Entrevistados = new List<Entrevistado>();
             string server = "DANCHITA45\\SQLEXPRESS";
             string database = "PlataformaJorge";
             string userId = "sa";
@@ -31,14 +31,22 @@ namespace FormularioJorge.Controllers
                     };
                     using (var reader = dbManager.ExecuteStoredProcedure(procedureName, parameters))
                     {
-                        // Leer los datos obtenidos
-                        //while (reader.Read())
-                        //{
-                        //    // Acceder a los datos por índice o nombre de columna
-                        //    Console.WriteLine($"{reader[0]}, {reader["Parametro1"]}");
-                        //    Console.WriteLine($"{reader[1]}, {reader["Parametro2"]}");
-                        //    Console.WriteLine($"{reader[2]}, {reader["Parametro3"]}");
-                        //}
+                        
+                        while (reader.Read())
+                        {
+
+                            Console.WriteLine($"{reader[0]}, {reader["IdEntrevistado"]}");
+                            Console.WriteLine($"{reader[1]}, {reader["Nombre"]}");
+                            Console.WriteLine($"{reader[2]}, {reader["RazonSocial"]}");
+                            _Entrevistados.Add(new Entrevistado()
+                            {
+                                IdEntrevistado = Convert.ToInt32(reader["IdEntrevistado"]),
+                                Nombre = reader["Nombre"].ToString(),
+                                RazonSocial = Convert.ToString(reader["RazonSocial"]),
+                                puesto = Convert.ToString(reader["Puesto"]),
+                                correo = Convert.ToString(reader["Correo"]),
+                            }); ;
+                        }
                     }
                 }
                 catch (Exception ex)
