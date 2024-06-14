@@ -77,5 +77,10 @@ namespace FormularioJorge.Controllers
         {
             return View();
         }
+        public IActionResult ImprimirOC()
+        {
+
+            return View();
+        }
     }
 }

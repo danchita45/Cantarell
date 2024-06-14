@@ -11,7 +11,7 @@ namespace FormularioJorge.Controllers
 
     public class HomeController : Controller
     {
-        private static List<Entrevistado> _Entrevistados = new List<Entrevistado>();
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -21,6 +21,7 @@ namespace FormularioJorge.Controllers
 
         public IActionResult Index()
         {
+            List<Entrevistado> _Entrevistados = new List<Entrevistado>();
             // Configurar los parámetros de conexión
             string server = "DANCHITA45\\SQLEXPRESS";
             string database = "PlataformaJorge";
@@ -109,13 +110,7 @@ namespace FormularioJorge.Controllers
                 }
             }
 
-            _Entrevistados.Add(new Entrevistado()
-            {
-                Nombre = NombreEntr,
-                RazonSocial = RazonSocial,
-                puesto = Puesto,
-                correo = CorreoElectronico
-            });
+
             return RedirectToAction("Index");
         }
 

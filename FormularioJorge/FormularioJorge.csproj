@@ -7,11 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\MarketIndexController1\ImprimirOC.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Views\Octanaje\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\MarketIndexController1\ImprimirOC.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\MarketIndexController1\ImprimirOC.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\MarketIndexController1\ImprimirOC.cshtml" />
   </ItemGroup>
 
 </Project>
