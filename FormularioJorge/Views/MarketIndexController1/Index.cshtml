@@ -1,15 +1,19 @@
-﻿
-<table width="100%" align="center" border="1">
+﻿<table width="100%" align="center">
     <div class="sect">
     <tr>
         <td class="tittle" colspan="2" align="left">Cantarell Market</td>
     </tr>
     </div>
-    <tr>
+</table>
 
+<br />
+
+
+<table width="100%" align="center" border="1" cellpadding="60" style="background-color: #000242;">
+    <tr>
         <div class="tabla-izq">
         <td>
-            <table class="tabla-izquierdo" width="30%" align="left" border="1">
+            <table cellpadding="20" width="40%" height="" align="left" border="1" style="background-color: white">
                 <tr>
                     <td align="center">
                         <button onclick="PantallaPrincipal(0)" class="btn">Precios</button>
@@ -17,7 +21,7 @@
                 </tr>
                 <tr>
                     <td align="center">
-                        
+
                         <a onclick="PantallaPrincipal(1)" class="btn">Ordenes</a>
                     </td>
                 </tr>
@@ -28,7 +32,7 @@
                 </tr>
             </table>
         </td>
-		</div>
+        </div>
         <td>
             <table id="Precios" width="100%" align="right">
                 <tr>
@@ -40,8 +44,9 @@
                                 <td>
                                     <select id="Idubicacion" name="IdUbicacion" onclick="Mostrardiferentes(this)">
                                         <option value="0">Seleccione ubicacion</option>
-                                        <option value="1">Metepec</option>
-                                        <option value="2">Toluca</option>
+                                        <option value="1">Estado 1</option>
+                                        <option value="2">Estado 2</option>
+                                        <option value="3">Estado 3</option>
                                     </select>
                                 </td>
                             </tr>
@@ -70,186 +75,561 @@
                         </table>
                     </td>
                 </tr>
-                <tr id="numero1">
+                <tr>
                     <td>
-                        <table width="100%" align="center">
-                            <tr>
-                                <td colspan="2">
-                                    <img width="200" height="100">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>
-                                        Nombre:
-                                    </label>
-                                </td>
-                                <td>Estacion 01</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>
-                                        RazonSocial:
-                                    </label>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>
-                                        Capacidad:
-                                    </label>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>
-                                        Diesel:
-                                    </label>
-                                </td>
-                                <td>
-                                    XX,XXX Lt
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>
-                                        87 Octanos:
-                                    </label>
-                                </td>
-                                <td>XX,XXX lT</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>
-                                        91 Octanos:
-                                    </label>
-                                </td>
-                                <td>XX,XXX lT</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>
-                                        Ubicacion:
-                                    </label>
-                                </td>
-                                <td>Calle X, Colonia X, CDMX,CP:0000</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td>
-                        <table width="100%" align="center">
-                            <tr>
-                                <td>
-                                    <table cellpadding="10" style="background-color: #6AEF68;" border="1">
-                                        <tr>
-                                            <td>
-                                                <table border="1" align="center">
-                                                    <tr>
-                                                        <td>
-                                                            <label>
-                                                                $XX.XX
-                                                            </label>
+                        <div style="max-height: 700px; overflow-y: scroll;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <table width="100%" align="center" border="1" style="background-color: lightgray;">
+                                            <tr>
+                                                <td colspan="3" align="center">
+                                                    <table width="200px" height="100px" style="background-color: white;">
+                                                        <tr>
+                                                            <td></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        Nombre:
+                                                    </label>
+                                                </td>
+                                                <td align="left">Estacion 01</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        RazonSocial:
+                                                    </label>
+                                                </td>
+                                                <td align="left"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        Capacidad:
+                                                    </label>
+                                                </td>
+                                                <td align="left"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        Diesel:
+                                                    </label>
+                                                </td>
+                                                <td align="left">
+                                                    XX,XXX Lt
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        87 Octanos:
+                                                    </label>
+                                                </td>
+                                                <td align="left">XX,XXX lT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label>
+                                                        91 Octanos:
+                                                    </label>
+                                                </td>
+                                                <td align="left">XX,XXX lT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label>
+                                                        Ubicacion:
+                                                    </label>
+                                                </td>
+                                                <td align="left">Calle X, Colonia X, CDMX,CP:0000</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table width="100%" align="center">
+                                            <tr>
+                                                <td>
+                                                    <table cellpadding="10" style="background-color: #5C5C5C;" border="1">
+                                                        <tr>
+                                                            <td>
+                                                                <table border="1" align="center" style="background-color: white;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <label>
+                                                                                $XX.XX
+                                                                            </label>
 
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            Diesel
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><label>Venta:</label></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label>Disponibilidad:</label></td>
-                                            <td>X días</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td>
-                                    <table border="1">
-                                        <tr>
-                                            <td>
-                                                <table border="1" align="center">
-                                                    <tr>
-                                                        <td>
-                                                            <label>
-                                                                $XX.XX
-                                                            </label>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Diesel
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label style="color:white">Venta:</label></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label style="color:white">Disponibilidad:</label></td>
+                                                            <td><label style="color:white">X días</label></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="1" cellpadding="10" style="background-color: #EF6868;">
+                                                        <tr>
+                                                            <td>
+                                                                <table border="1" align="center" style="background-color: white;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <label>
+                                                                                $XX.XX
+                                                                            </label>
 
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            91 Octanos
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><label>Venta:</label></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label>Disponibilidad:</label></td>
-                                            <td>X días</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td>
-                                    <table border="1">
-                                        <tr>
-                                            <td>
-                                                <table border="1" align="center">
-                                                    <tr>
-                                                        <td>
-                                                            <label>
-                                                                $XX.XX
-                                                            </label>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            91 Octanos
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Venta:</label></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Disponibilidad:</label></td>
+                                                            <td>X días</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="1" cellpadding="10" style="background-color: #6AEF68;">
+                                                        <tr>
+                                                            <td>
+                                                                <table border="1" align="center" style="background-color: white;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <label>
+                                                                                $XX.XX
+                                                                            </label>
 
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            87 Octanos
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><label>Venta:</label></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label>Disponibilidad:</label></td>
-                                            <td>X días</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            87 Octanos
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Venta:</label></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Disponibilidad:</label></td>
+                                                            <td>X días</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
 
-                                <td align="center"><a href="@Url.Action("OctanosDiesel","MarketIndexController1")" class="btn">compra</a></td>
-                                <td align="center"><a href="@Url.Action("OctanosNueve","MarketIndexController1")" class="btn">compra</a></td>
+                                                <td align="center"><a href="@Url.Action("OctanosDiesel","MarketIndexController1")" class="btn">compra</a></td>
+                                                <td align="center"><a href="@Url.Action("OctanosNueve","MarketIndexController1")" class="btn">compra</a></td>
 
-                                <td align="center">
-                                    <a href="@Url.Action("Octanosocho","MarketIndexController1")" class="btn">compra</a>
-                                </td>
-                            </tr>
-                        </table>
+                                                <td align="center">
+                                                    <a href="@Url.Action("Octanosocho","MarketIndexController1")" class="btn">compra</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" align="center" border="1" style="background-color: lightgray;">
+                                            <tr>
+                                                <td colspan="3" align="center">
+                                                    <table width="200px" height="100px" style="background-color: white;">
+                                                        <tr>
+                                                            <td></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        Nombre:
+                                                    </label>
+                                                </td>
+                                                <td align="left">Estacion 02</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        RazonSocial:
+                                                    </label>
+                                                </td>
+                                                <td align="left"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        Capacidad:
+                                                    </label>
+                                                </td>
+                                                <td align="left"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        Diesel:
+                                                    </label>
+                                                </td>
+                                                <td align="left">
+                                                    XX,XXX Lt
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        87 Octanos:
+                                                    </label>
+                                                </td>
+                                                <td align="left">XX,XXX lT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label>
+                                                        91 Octanos:
+                                                    </label>
+                                                </td>
+                                                <td align="left">XX,XXX lT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label>
+                                                        Ubicacion:
+                                                    </label>
+                                                </td>
+                                                <td align="left">Calle X, Colonia X, CDMX,CP:0000</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table width="100%" align="center">
+                                            <tr>
+                                                <td>
+                                                    <table cellpadding="10" style="background-color: #5C5C5C;" border="1">
+                                                        <tr>
+                                                            <td>
+                                                                <table border="1" align="center" style="background-color: white;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <label>
+                                                                                $XX.XX
+                                                                            </label>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Diesel
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label style="color:white">Venta:</label></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label style="color:white">Disponibilidad:</label></td>
+                                                            <td><label style="color:white">X días</label></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="1" cellpadding="10" style="background-color: #EF6868;">
+                                                        <tr>
+                                                            <td>
+                                                                <table border="1" align="center" style="background-color: white;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <label>
+                                                                                $XX.XX
+                                                                            </label>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            91 Octanos
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Venta:</label></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Disponibilidad:</label></td>
+                                                            <td>X días</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="1" cellpadding="10" style="background-color: #6AEF68;">
+                                                        <tr>
+                                                            <td>
+                                                                <table border="1" align="center" style="background-color: white;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <label>
+                                                                                $XX.XX
+                                                                            </label>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            87 Octanos
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Venta:</label></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Disponibilidad:</label></td>
+                                                            <td>X días</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td align="center"><a href="@Url.Action("OctanosDiesel","MarketIndexController1")" class="btn">compra</a></td>
+                                                <td align="center"><a href="@Url.Action("OctanosNueve","MarketIndexController1")" class="btn">compra</a></td>
+
+                                                <td align="center">
+                                                    <a href="@Url.Action("Octanosocho","MarketIndexController1")" class="btn">compra</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" align="center" border="1" style="background-color: lightgray;">
+                                            <tr>
+                                                <td colspan="3" align="center">
+                                                    <table width="200px" height="100px" style="background-color: white;">
+                                                        <tr>
+                                                            <td></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        Nombre:
+                                                    </label>
+                                                </td>
+                                                <td align="left">Estacion 03</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        RazonSocial:
+                                                    </label>
+                                                </td>
+                                                <td align="left"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        Capacidad:
+                                                    </label>
+                                                </td>
+                                                <td align="left"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        Diesel:
+                                                    </label>
+                                                </td>
+                                                <td align="left">
+                                                    XX,XXX Lt
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <label>
+                                                        87 Octanos:
+                                                    </label>
+                                                </td>
+                                                <td align="left">XX,XXX lT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label>
+                                                        91 Octanos:
+                                                    </label>
+                                                </td>
+                                                <td align="left">XX,XXX lT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label>
+                                                        Ubicacion:
+                                                    </label>
+                                                </td>
+                                                <td align="left">Calle X, Colonia X, CDMX,CP:0000</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table width="100%" align="center">
+                                            <tr>
+                                                <td>
+                                                    <table cellpadding="10" style="background-color: #5C5C5C;" border="1">
+                                                        <tr>
+                                                            <td>
+                                                                <table border="1" align="center" style="background-color: white;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <label>
+                                                                                $XX.XX
+                                                                            </label>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Diesel
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label style="color:white">Venta:</label></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label style="color:white">Disponibilidad:</label></td>
+                                                            <td><label style="color:white">X días</label></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="1" cellpadding="10" style="background-color: #EF6868;">
+                                                        <tr>
+                                                            <td>
+                                                                <table border="1" align="center" style="background-color: white;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <label>
+                                                                                $XX.XX
+                                                                            </label>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            91 Octanos
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Venta:</label></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Disponibilidad:</label></td>
+                                                            <td>X días</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table border="1" cellpadding="10" style="background-color: #6AEF68;">
+                                                        <tr>
+                                                            <td>
+                                                                <table border="1" align="center" style="background-color: white;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <label>
+                                                                                $XX.XX
+                                                                            </label>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            87 Octanos
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Venta:</label></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><label>Disponibilidad:</label></td>
+                                                            <td>X días</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td align="center"><a href="@Url.Action("OctanosDiesel","MarketIndexController1")" class="btn">compra</a></td>
+                                                <td align="center"><a href="@Url.Action("OctanosNueve","MarketIndexController1")" class="btn">compra</a></td>
+
+                                                <td align="center">
+                                                    <a href="@Url.Action("Octanosocho","MarketIndexController1")" class="btn">compra</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </td>
                 </tr>
 
+
             </table>
-            <table id="Ordenes" width="100%" align="center" hidden>
+            <table id="Ordenes" width="100%" align="center" style="background-color: white;" hidden>
                 <tr>
                     <td>
                         <table width="100%" align="center">
@@ -264,7 +644,7 @@
                         </table>
                         <br />
 
-                        <table width="100%" align="center" border="1">
+                        <table width="100%" align="center" border="1" cellpadding="10">
                             <tr>
                                 <td>ID</td>
                                 <td>Fecha</td>
@@ -276,8 +656,10 @@
                                 <td>Fecha</td>
                                 <td>Orden de Compra 01</td>
                                 <td colspan="2" class="tools">
-                                    <img src="path/to/image1.jpg" alt="tool1">
-                                    <img src="path/to/image2.jpg" alt="tool2">
+                                    <img src="~/Images/ImpIcon.jpeg" alt="tool1">
+                                    <a asp-action="imprimirOC" asp-controller="MarketIndexController1">
+                                        <img src="~/Images/descIcon.jpeg" alt="tool2">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -285,8 +667,10 @@
                                 <td>Fecha</td>
                                 <td>Orden de Compra 02</td>
                                 <td colspan="2" class="tools">
-                                    <img src="path/to/image1.jpg" alt="tool1">
-                                    <img src="path/to/image2.jpg" alt="tool2">
+                                    <img src="~/Images/ImpIcon.jpeg" alt="tool1">
+                                    <a asp-action="imprimirOC" asp-controller="MarketIndexController1">
+                                        <img src="~/Images/descIcon.jpeg" alt="tool2">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -294,8 +678,10 @@
                                 <td>Fecha</td>
                                 <td>Orden de Compra 03</td>
                                 <td colspan="2" class="tools">
-                                    <img src="path/to/image1.jpg" alt="tool1">
-                                    <img src="path/to/image2.jpg" alt="tool2">
+                                    <img src="~/Images/ImpIcon.jpeg" alt="tool1">
+                                    <a asp-action="imprimirOC" asp-controller="MarketIndexController1">
+                                        <img src="~/Images/descIcon.jpeg" alt="tool2">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -303,8 +689,10 @@
                                 <td>Fecha</td>
                                 <td>Orden de Compra 04</td>
                                 <td colspan="2" class="tools">
-                                    <img src="path/to/image1.jpg" alt="tool1">
-                                    <img src="path/to/image2.jpg" alt="tool2">
+                                    <img src="~/Images/ImpIcon.jpeg" alt="tool1">
+                                    <a asp-action="imprimirOC" asp-controller="MarketIndexController1">
+                                        <img src="~/Images/descIcon.jpeg" alt="tool2">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -312,8 +700,10 @@
                                 <td>Fecha</td>
                                 <td>Orden de Compra 05</td>
                                 <td colspan="2" class="tools">
-                                    <img src="path/to/image1.jpg" alt="tool1">
-                                    <img src="path/to/image2.jpg" alt="tool2">
+                                    <img src="~/Images/ImpIcon.jpeg" alt="tool1">
+                                    <a asp-action="imprimirOC" asp-controller="MarketIndexController1">
+                                        <img src="~/Images/descIcon.jpeg" alt="tool2">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -321,8 +711,10 @@
                                 <td>Fecha</td>
                                 <td>Orden de Compra 06</td>
                                 <td colspan="2" class="tools">
-                                    <img src="path/to/image1.jpg" alt="tool1">
-                                    <img src="path/to/image2.jpg" alt="tool2">
+                                    <img src="~/Images/ImpIcon.jpeg" alt="tool1">
+                                    <a asp-action="imprimirOC" asp-controller="MarketIndexController1">
+                                        <img src="~/Images/descIcon.jpeg" alt="tool2">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -330,8 +722,10 @@
                                 <td>Fecha</td>
                                 <td>Orden de Compra 07</td>
                                 <td colspan="2" class="tools">
-                                    <img src="path/to/image1.jpg" alt="tool1">
-                                    <img src="path/to/image2.jpg" alt="tool2">
+                                    <img src="~/Images/ImpIcon.jpeg" alt="tool1">
+                                    <a asp-action="imprimirOC" asp-controller="MarketIndexController1">
+                                        <img src="~/Images/descIcon.jpeg" alt="tool2">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -339,8 +733,10 @@
                                 <td>Fecha</td>
                                 <td>Orden de Compra 08</td>
                                 <td colspan="2" class="tools">
-                                    <img src="path/to/image1.jpg" alt="tool1">
-                                    <img src="path/to/image2.jpg" alt="tool2">
+                                    <img src="~/Images/ImpIcon.jpeg" alt="tool1">
+                                    <a asp-action="imprimirOC" asp-controller="MarketIndexController1">
+                                        <img src="~/Images/descIcon.jpeg" alt="tool2">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -348,8 +744,10 @@
                                 <td>Fecha</td>
                                 <td>Orden de Compra 09</td>
                                 <td colspan="2" class="tools">
-                                    <img src="path/to/image1.jpg" alt="tool1">
-                                    <img src="path/to/image2.jpg" alt="tool2">
+                                    <img src="~/Images/ImpIcon.jpeg" alt="tool1">
+                                    <a asp-action="imprimirOC" asp-controller="MarketIndexController1">
+                                        <img src="~/Images/descIcon.jpeg" alt="tool2">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -357,16 +755,14 @@
                                 <td>Fecha</td>
                                 <td>Orden de Compra 10</td>
                                 <td colspan="2" class="tools">
-                                    <img src="path/to/image1.jpg" alt="tool1">
-                                    <img src="path/to/image2.jpg" alt="tool2">
+                                    <img src="~/Images/ImpIcon.jpeg" alt="tool1">
+                                    <a asp-action="imprimirOC" asp-controller="MarketIndexController1">
+                                        <img src="~/Images/descIcon.jpeg" alt="tool2">
+                                    </a>
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
             </table>
-
-        </td>
-    </tr>
-</table>
-<script src="~/js/IndexPrecios.js"></script>
+            <script src="~/js/IndexPrecios.js"></script>
